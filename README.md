@@ -1,12 +1,24 @@
 # nodewebapp
 
+
 ```bash
-sudo npm install -g nodemon
+
+sudo npm install -g express-generator
+
+express nodewebapp
+
+cd nodewebapp && npm install
+
 ```
 
 
-### Start app
+#### Starting app
 
 ```bash
+
+sudo npm install -g nodemon
+
 nodemon app.js
+
+
 ```
