@@ -6,4 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Admin' });
 });
 
+router.get('/test', function(req, res, next) {
+  // res.send('test');
+  res.jsonp({ user: 'tobi' });
+});
+
 module.exports = router;
