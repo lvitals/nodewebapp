@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
         include: [ models.Task ]
     }).then(function(users) {
         res.render('index', {
-            title: 'Epress with Sequelize',
+            title: 'Express with Sequelize',
             users: users
         });
     });
