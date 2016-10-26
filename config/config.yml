@@ -1,0 +1,30 @@
+default:
+    server:
+        port: 3000
+    database:
+        dialect: 'mysql'
+        host: 'localhost'
+        pool:
+            max: 5,
+            min: 0,
+            idle: 10000
+
+development:
+    database:
+        db: 'nodejs'
+        user: 'root'
+        password: 'root'
+
+test:
+    database:
+        db: 'test_db'
+
+production:
+    server:
+        port: 8000
+    database:
+        db: 'prod_db'
+        user: 'dbuser'
+        password: 'pass'
+    cache:
+        dir: 'static'
