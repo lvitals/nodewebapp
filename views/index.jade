@@ -6,8 +6,9 @@ block content
 
   h2 Creating a new user
   form(action="/users/create", method="post")
-    input(type="text", name="username")
-    input(type="submit")
+    .ui.input
+        input(type="text", name="username")
+        input(type="submit")
 
   h2 Users
 
@@ -23,8 +24,9 @@ block content
         li
           | Creating a new task:
           form(action="/users/" + user.id + "/tasks/create", method="post", style="display: inline")
-            input(type="text", name="title")
-            input(type="submit")
+            .ui.input
+                input(type="text", name="title")
+                input(type="submit")
         each task in user.Tasks
           li
             = task.title

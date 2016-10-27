@@ -3,11 +3,11 @@
 
 ```bash
 
-sudo npm install -g express-generator
+$ sudo npm install -g express-generator
 
-express nodewebapp
+$ express nodewebapp
 
-cd nodewebapp && npm install
+$ cd nodewebapp && npm install
 
 ```
 
@@ -15,11 +15,11 @@ cd nodewebapp && npm install
 
 ```bash
 
-npm install -g npm-check-updates
+$ npm install -g npm-check-updates
 
-ncu -u
+$ ncu -u
 
-npm install
+$ npm install
 
 ```
 
@@ -27,15 +27,15 @@ npm install
 
 ```bash
 
-sudo npm install -g nodemon
+$ sudo npm install -g nodemon
 
-nodemon bin/www
+$ nodemon bin/www
 
 or
 
-npm install nodemon --save-dev
+$ npm install nodemon --save-dev
 
-node_modules/.bin/nodemon bin/www
+$ node_modules/.bin/nodemon bin/www
 
 
 ```
@@ -52,5 +52,17 @@ $ npm install --save sqlite3
 $ npm install --save tedious // MSSQL
 
 $ node_modules/.bin/sequelize init
+
+```
+
+#### Semantic UI
+
+```bash
+
+$ node_modules/.bin/gulp build --gulpfile public/semantic/gulpfile.js
+
+or
+
+gulp build --cwd 'public/semantic/
 
 ```
