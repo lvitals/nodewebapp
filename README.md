@@ -1,4 +1,4 @@
-# nodewebapp
+# nodewebapp, install express-generator
 
 
 ```bash
@@ -11,6 +11,17 @@ cd nodewebapp && npm install
 
 ```
 
+#### npm update
+
+```bash
+
+npm install -g npm-check-updates
+
+ncu -u
+
+npm install
+
+```
 
 #### Starting app
 
@@ -19,6 +30,12 @@ cd nodewebapp && npm install
 sudo npm install -g nodemon
 
 nodemon bin/www
+
+or
+
+npm install nodemon --save-dev
+
+node_modules/.bin/nodemon bin/www
 
 
 ```
