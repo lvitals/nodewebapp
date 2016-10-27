@@ -63,6 +63,6 @@ $ node_modules/.bin/gulp build --gulpfile public/semantic/gulpfile.js
 
 or
 
-gulp build --cwd 'public/semantic/
+gulp build --cwd 'semantic/'
 
 ```
