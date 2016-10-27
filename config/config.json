@@ -4,8 +4,8 @@
   },
   "development": {
     "username": "root",
-    "password": null,
-    "database": "dev_db",
+    "password": "root",
+    "database": "nodejs",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },

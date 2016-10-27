@@ -66,3 +66,11 @@ or
 gulp build --cwd 'semantic/'
 
 ```
+
+#### Yarn
+
+```bash
+
+yarn install
+
+```
