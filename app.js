@@ -25,12 +25,12 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // define routes to folder and files
-fs.readdirSync('./routes/').forEach(function (file) {
+fs.readdirSync('./controllers/').forEach(function (file) {
     if(file.split('.').pop() != 'js') return;
     var fileName = file.split('.').shift();
-    app.use('/' + fileName, require('./routes/' + fileName));
+    app.use('/' + fileName, require('./controllers/' + fileName));
     if (fileName == 'index') {
-        app.use('/', require('./routes/' + fileName));
+        app.use('/', require('./controllers/' + fileName));
     }
 });
 
