@@ -3,8 +3,9 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Admin' });
+  res.render('admin/index', { title: 'Admin' });
 });
+
 
 router.get('/test', function(req, res, next) {
   // res.send('test');
